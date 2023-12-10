@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // let声明的变量具有块级作用域
+        /*if (true){
+            // 使用let声明一个变量age 值为18
+            let age = 18;
+            console.log(age);
+        }
+        console.log(age);*/
+
+        // 声明了一个函数test
+        /*function test(){
+            let age = 18; // 使用let声明了一个局部变量 age
+            console.log(age);
+        }
+        // 调用test函数
+        test()
+        console.log(age);  // 外部获取不到局部变量age*/
+
+
+        //  声明了一个函数test  证明了函数作用域和块级作用域互不干扰
+        /*function test(){
+            let age = 18; // 使用let声明了一个局部变量 age
+            if (true){
+                // 使用let声明一个块变量age 值为28
+                let age = 28;
+                console.log(age);  // 28
+            }
+            console.log(age);  // 18
+        }
+        // 调用test函数
+        test()*/
+
+         // 报错  Cannot access 'age' before initialization
+        // console.log(age);
+        // let age = 18;
+
+        //  let 不可以重复声明
+        let age = 18;
+        let age = 19;
+        console.log(age);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

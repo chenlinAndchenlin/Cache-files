@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // let i = 1;
+        /*let i = 11;
+        do{
+            document.write(i + '<br />')
+            i++;
+        }while(i<10);*/
+
+
+        /*let i = 1;
+        do{
+            let j = 1;
+            do{
+                document.write(j + ' ')
+                j++;
+            }while(j<=i);
+            document.write('<br />')
+            i++;
+        }while(i<10);*/
+
+    var a = 1;
+    do{
+
+            var k = 1;
+            do{
+                if(a==9){
+                    break
+                }
+                document.write('&nbsp;&nbsp;&nbsp');
+                k++;
+            }while(k<=9-a);
+            var i = 1;
+            do{
+                document.write(i+' ');
+                i++;
+            }while(i<=a);
+            document.write('<br>');
+            a++;
+        }while(a<10);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

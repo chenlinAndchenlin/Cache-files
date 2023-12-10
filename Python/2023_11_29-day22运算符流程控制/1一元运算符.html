@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 一元运算符  python没有  i += 1
+        let i = 1;
+        i++;  // 后++  自身+1
+        ++i;  // 前++  自身+1
+
+        i--;  // 后--  自身-1   i -= 1
+        --i;  // 前--  自身-1
+
+        // 增加难度  注意的点  前++/-- 后++/--  区别在于 是先自身运算还是先进行别的运算后再自身运算
+        var num = i++;
+        var num = ++i;
+
+        var num = i--;
+        var num = --i;
+
+        let i = 1;
+        var num = i++ + ++i;
+        console.log('i', i)
+        console.log('num', num)
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

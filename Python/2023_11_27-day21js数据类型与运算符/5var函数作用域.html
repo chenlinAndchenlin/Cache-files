@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // var 声明的变量没有块级作用域 if  for  while。。。 跟python一样 只有含数据作用域
+        /*if (true){
+            var age = 18;
+            console.log(age);
+        }
+        console.log(age)*/
+        // 声明了test函数  函数作用域
+        /*function test(){
+            var age = 18; // 声明了一个局部变量 age
+            console.log(age);
+        }
+        // 调用test函数
+        test()
+        console.log(age);  // 外部获取不到局部变量age*/
+
+        // var 声明的变量会有变量提升
+        /*console.log(age);
+        var age = 18;*/
+
+        //  var可以重复声明
+        var age = 18;
+        var age = 19;
+        console.log(age);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

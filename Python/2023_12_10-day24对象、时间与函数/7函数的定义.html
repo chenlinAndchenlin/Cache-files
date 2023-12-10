@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script !src="">
+        // fun()
+        // 无参
+        /*function fun(){
+            console.log('fun函数')
+            return '123'
+            // 下面代码不在执行
+            console.log('fun函数')
+        }*/
+        // console.log(fun())
+
+
+        // 携带参数
+        function fun(name,age){
+            console.log(name, age)
+        }
+        fun() // undefined undefined
+        // fun('lucky') // lucky undefined
+        // fun('lucky', 18) // lucky 18
+        // fun('lucky', 18, 20) // lucky 18
+
+        var fun = new Function("x","y","var z=x+y;return z;");
+        // var fun = new Function("x=1","y=2","var z=x+y;return z;");
+        console.log(fun(1, 2))
+    </script>
+</head>
+<body>
+
+</body>
+</html>

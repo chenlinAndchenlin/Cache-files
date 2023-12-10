@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 对象中的name、age、speak将值赋值给变量
+        var obj = {
+            'name': 'lucky',
+            'age': 18,
+        }
+        // 把obj对象中的name属性的值赋值给变量name
+        // var name = obj.name
+        // 新语法
+        // var {name,age} = obj
+        // console.log(name)
+        // console.log(age)
+
+        // 变量和要赋值的属性名称相同
+        var {name,age1} = obj
+        console.log(name)
+        console.log(age1) // undefined
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

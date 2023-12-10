@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js_5_时间对象函数</title>
+</head>
+<body>
+<script type="text/javascript">
+    /*
+    * 1、函数回顾
+    *   1.1 自运行函数
+    *   1.2 函数箭头函数
+    *   1.3 定义函数
+    * */
+    /* (function(){
+            console.log('自调用')
+        })()*/
+
+    /*!function () {
+            console.log('Hello！');
+        }()
+
+
+    +function () {
+            console.log('Hello+');
+        }()*/
+    //箭头函数
+    /*(()=>{
+            console.log('Hello');
+        })();*/
+    /*((name)=>{
+    console.log(name)
+    })("lucky1")*/
+    /*  (name=>{
+              console.log('Hello', name);
+          })('lucky2');*/
+
+    // ((name, age)=>{
+    //         console.log('Hello', name, age);
+    //     })('lucky', 18);
+
+
+    /*
+    * 2.作用域*/
+
+    /*var name = 'lucky'
+
+    function fn() {
+        // 局部变量
+        // var age = 18;
+        // age = 18;
+        name = '治刚'
+        console.log(name);
+    }
+
+    fn()
+    // console.log(age);
+    console.log(name);*/
+
+    /* let arr = []
+
+     function fn() {
+         arr.push('lucky1')
+         arr.push('lucky2')
+     }
+
+     fn()  //  有值1  没值2
+     console.log(arr)*/
+
+    /*
+    * 3.arguments*/
+    /*function fun() {
+        console.log(arguments)
+        console.log(arguments.length)
+        // 循环迭代获取所有传入的实参
+        for (var i = 0; i < arguments.length; i++) {
+            console.log(arguments[i])
+        }
+    }
+
+    fun(1, 2, 3, 4, 5)*/
+
+
+    /*
+    * 4.return 逗号运算 全部执行 但是返回最后一个结果 */
+    /*var fn = function () {
+                // 逗号运算符  逗号的值都会被执行  最后一个为返回的值
+                return console.log('1'),console.log('2'),console.log('3'),4;
+            }
+            console.log('====',fn())*/
+
+    /*5.闭包 函数内部嵌套另一个函数*/
+    /*    function add() {
+        var counter = 0;
+        function plus() {
+          counter += 1;
+        }
+        plus();
+        return counter;
+    }
+
+    var c=add()
+        console.log(c)*/
+
+    /*var add = (function () {
+        var counter = 0;
+        return function () {
+            return counter += 1
+        }
+    })()
+    add()
+    add()
+    add()
+    add()
+    var c = add()
+    console.log(c)*/
+
+    /*6.json的序列化 反序列化*/
+    /*const dataToSend = {
+              username: "Lucky",
+              age: 18,
+              isAdmin: false
+            };
+            console.log(dataToSend)
+            // 将对象转换成json字符串
+            const jsonString = JSON.stringify(dataToSend);
+            console.log(jsonString)
+            console.log(typeof jsonString)*/
+    /*  const jsonResponse = '{"username": "Lucky", "age": 25, "isAdmin": false}';
+       const userData = JSON.parse(jsonResponse);
+       console.log(userData)*/
+
+
+</script>
+</body>
+</html>

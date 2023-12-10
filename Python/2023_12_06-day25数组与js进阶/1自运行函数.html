@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script !src="">
+        // 自调用
+        /*(function(){
+            console.log('自调用')
+        })()*/
+
+        // 命名的自调用
+        /*(function namedFunction() {
+            // 代码块
+             var x = "Hello!!";      // 我将调用自己
+             console.log(x);
+        })();*/
+
+        // 特殊符号的自运行
+        /*!function () {
+            console.log('Hello');
+        }()*/
+
+        /*+function () {
+            console.log('Hello');
+        }()*/
+
+        /*-function () {
+            console.log('Hello');
+        }()*/
+
+        /*~function () {
+            console.log('Hello');
+        }()*/
+
+       // 箭头函数
+        // 无参
+        /*(()=>{
+            console.log('Hello');
+        })();*/
+        // 带参
+        /*(name=>{
+            console.log('Hello', name);
+        })('lucky');*/
+
+        /*((name)=>{
+            console.log('Hello', name);
+        })('lucky');*/
+
+        // 多个参数
+        ((name, age)=>{
+            console.log('Hello', name, age);
+        })('lucky', 18);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

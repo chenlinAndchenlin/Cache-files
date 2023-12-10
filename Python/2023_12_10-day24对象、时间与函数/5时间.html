@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var date = new Date()
+        console.log(date.getTime())
+        // 长度为13为  python中生成的长度为10位置.小数点
+        // 所以python处理时间的话 int(time.time()*1000)  此刻和getTime生成的时间相同
+        console.log((date.getTime()+'').length)
+    </script>
+</head>
+<body>
+    <p>时间：<span id="show"></span></p>
+    <button onclick="stop()">暂停</button>
+<script>
+    var s = document.getElementById('show');
+    var timer = setInterval(function () {
+        var box = new Date();
+        s.innerHTML = box.toLocaleDateString()+' '+box.toLocaleTimeString();
+    },1);
+    function stop() {
+        clearInterval(timer);
+    }
+</script>
+</body>
+</html>

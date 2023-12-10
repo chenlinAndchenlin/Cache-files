@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var str = 'aBcxd123a';
+        // 参数可以是正则表达式 也可以是普通字符 就当成普通函数用
+        // console.log(str.search('a'))  // 0
+        // console.log(str.search('x'))  // -1  查找不到
+        // console.log(str.search(/[1-9]/))  // /为定界符号  中间写正则表达式  4
+        // console.log(str.search(/b/))  // -1
+        // console.log(str.search(/b/i))  // i修正符  python中为re.I
+
+        // 字符串替换  参数也可以为正则表达式
+        // console.log(str.replace('a', 'xxxx'))
+        // console.log(str.replace(/a/g, 'xxxx'))
+
+
+        // 字符串的切片  不包含尾下标
+        // console.log(str.substring(0, 3))
+        // 字符串拆分
+        // console.log(str.split('x'))
+        // 限制返回长度为1
+        // console.log(str.split('x', 1))
+        console.log(str.split(/x/, 1))
+    </script>
+</head>
+<body>
+
+</body>
+</html>

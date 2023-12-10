@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 不允许变量提升
+        // console.log(MONEY);
+        // 使用const声明常量
+        // const MONEY = 100000;
+        // 不可以重复定义
+        // const MONEY = 100000;
+        // console.log(MONEY);
+
+        // var声明的变量可以修改
+        /*var age = 18
+        age = 20*/
+
+        // let声明的变量可以修改
+        /*let age = 18
+        age = 20
+        console.log(age);*/
+        // const 的常量一旦被定义就不能被修改
+
+        // const MONEY = 100000;
+        // MONEY = 200000;
+        // console.log(MONEY);
+
+        // 作用域
+        // 声明了一个函数test
+        /*function test(){
+            const age = 18; // 使用let声明了一个局部常量 age
+            console.log(age);
+        }
+        // 调用test函数
+        test()
+        console.log(age);*/
+
+        // CONST声明的变量具有块级作用域
+        /*if (true){
+            // 使用let声明一个变量age 值为18
+            const age = 18;
+            console.log(age);
+        }
+        console.log(age);*/
+
+        //  声明了一个函数test  证明了函数作用域和块级作用域互不干扰
+        /*function test(){
+            const age = 18; // 使用const声明了一个局部常量 age
+            if (true){
+                // 使用const声明一个块变量age 值为28
+                const age = 28;
+                console.log(age);  // 28
+            }
+            console.log(age);  // 18
+        }
+        // 调用test函数
+        test()*/
+    </script>
+</head>
+<body>
+
+</body>
+</html>

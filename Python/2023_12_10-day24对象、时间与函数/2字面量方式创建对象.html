@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script !src="">
+        /*// 创建对象obj
+        var obj = {};
+        console.log(obj)
+        // 添加属性
+        obj.name = 'lucky';
+        obj.age = 18;
+        // 添加方法
+        obj.speak = function(){console.log('我是说方法')}
+        console.log(obj)
+        // 调用obj对象的属性
+        console.log(obj.name)
+        // 调用obj对象的方法
+        console.log(obj.speak())*/
+
+        // 创建的时候添加属性和方法
+        // 属性名为字符串
+        /*var obj = {
+            'name': 'lucky',
+            'age': 18,
+            'speak': function(){
+                console.log('我是说方法')
+            }
+        }*/
+        // 属性名去掉引号
+        /*var obj = {
+            name: 'lucky',
+            age: 18,
+            speak: function(){
+                console.log('我是说方法')
+            }
+        }
+         // 调用obj对象的属性
+        console.log(obj.name)
+        // 调用obj对象的方法
+        console.log(obj.speak())*/
+
+
+        var obj = {
+            name: 'lucky',
+            age: 18,
+            speak: function(sex){
+                // console.log('我是说方法')
+                // 我的名字是： 我今年 岁了 我的性别是
+                // `我的名字是：${} 我今年 岁了 我的性别是`
+                // console.log(this)  // 代表当前对象
+                // 调用当前对象的name和age属性
+                // console.log(this.name)
+                // console.log(this.age)
+                let str = `我的名字是：${this.name}、我今年${this.age}岁了、我的性别是${sex}`
+                console.log(str)
+                return '返回值'
+            }
+        }
+         // 调用obj对象的属性
+        // console.log(obj.name)
+        // 调用obj对象的方法
+        // console.log(obj.speak('man'))
+        // console.log(obj)
+        /*
+        * python中
+        * obj.__dict__['属性']
+        * */
+        // 使用中括号的方式进行调用  （常用于js逆向）
+        // console.log(obj['name'])  // 调用obj对象的属性
+        // console.log(obj[name])  // 调用obj对象的属性
+        // console.log(obj['xxx'])
+        // var age = 'age'
+        // console.log(obj[age])  // 调用obj对象的属性
+
+        // 删除obj中的name属性
+        // delete obj.name;
+        // console.log(obj.name)  // undefiend
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

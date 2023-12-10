@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 计数器
+        /*let counter = 0
+        var add = function(){
+            return counter+=1;
+        }*/
+
+        // 改进
+        /*var add = function(){
+            let counter = 0
+            return counter+=1;
+        }*/
+
+
+        /*var add = function(){
+            var counter = 0 // 只执行一次
+            var sum = function() {
+                return counter += 1;
+            }
+            return sum
+
+        }
+        var sum = add()
+        console.log(sum())
+        counter = 10
+        console.log(sum())
+        console.log(sum())*/
+
+
+        /*var add = (function(){
+            var counter = 0 // 只执行一次
+            var sum = function() {
+                return counter += 1;
+            }
+            return sum
+
+        })()*/
+        // 最终的形式
+        var add = (function(){
+            var counter = 0 // 只执行一次
+            return function() {
+                return counter += 1;
+            }
+        })()
+        // 此刻的add  其实就是sum
+        console.log(add())
+        // counter = 10
+        console.log(add())
+        console.log(add())
+    </script>
+</head>
+<body>
+
+</body>
+</html>
