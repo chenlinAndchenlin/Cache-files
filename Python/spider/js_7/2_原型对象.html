@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型对象</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 构造函数
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // // 在构造函数的原型对象上添加属性和方法
+    // Person.prototype.gender = "man";
+    // Person.prototype.sayHello = function () {
+    //     console.log("Hello, my name is " + this.name + ".");
+    // };
+
+    // 创建对象实例
+    var person1 = new Person("迪丽热巴", 25);
+    var person2 = new Person("lucky", 30);
+    person1.__proto__['sex']='女'
+
+    console.log(("p1======》", person1))
+    console.log(("p1======》", person2))
+
+    // person2.__proto__['sex']='男'
+    //     console.log(("p1======》", person1))
+    // console.log(("p1======》", person2))
+    // console.log(person1.gender); // 输出 "man"
+    // person1.sayHello(); // 输出 "Hello, my name is 迪丽热巴."
+    //
+    // console.log(person2.gender); // 输出 "man"
+    // person2.sayHello(); // 输出 "Hello, my name is lucky."
+    //
+    // console.log(Person.prototype); // 输出 { gender: 'man', sayHello: [Function] }
+    // console.log(Person.prototype.constructor); // 输出 { gender: 'man', sayHello: [Function] }
+    // console.log(typeof Person.prototype); // 输出 "object"
+</script>
+</body>
+</html>
